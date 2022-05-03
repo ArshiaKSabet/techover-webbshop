@@ -1,5 +1,6 @@
 import Products from '../components/screens/Products/Products';
 import Checkout from '../components/screens/Checkout/Checkout';
+import AboutUs from '../components/screens/AboutUs/AboutUs';
 
 const NoMatch = () => {
 	return <div>404</div>;
@@ -20,5 +21,10 @@ export const ROUTES = [
 		path: '*',
 		exact: true,
 		component: NoMatch
+	},
+	{
+		path: '/aboutus',
+		exact: true,
+		component: AboutUs
 	}
 ];
